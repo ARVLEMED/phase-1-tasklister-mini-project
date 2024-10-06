@@ -5,9 +5,11 @@ html {
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: #00FFFF;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -21,9 +23,9 @@ button {
   align-items: center;
   flex-direction: column;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
+  background: rgb(255,0,255,0.5);
+  padding: 25px 30px 20px 20px;
+  border-radius: 10px;
   box-shadow: 2px 5px 5px #333;
 }
 
@@ -34,4 +36,45 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+* {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.low {
+  color: green;
+}
+
+.medium {
+  color: blue;
+}
+
+.high {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: purple;
+}
+
+@media only screen and (max-width:800px) {
+  
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  
+  .menu, .main, .right {
+    width: 100%;}
+  }
